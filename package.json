@@ -8,5 +8,9 @@
   },
   "keywords": ["ai"],
   "author": "Arda Sevinc <arda@ardasevinc.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "engines": {
+      "node": ">=18",
+      "pnpm": ">=8"
+  }
 }
