@@ -12,5 +12,6 @@
   "engines": {
       "node": ">=18",
       "pnpm": ">=8"
-  }
+  },
+  "prettier": "@ardasevinc/prettier-config"
 }
