@@ -11,14 +11,14 @@ importers:
   apps/cli:
     dependencies:
       axios:
-        specifier: ^1.6.0
-        version: 1.6.0
+        specifier: ^1.6.1
+        version: 1.6.1
       dotenv:
         specifier: ^16.3.1
         version: 16.3.1
       ink:
         specifier: ^4.4.1
-        version: 4.4.1(@types/react@18.2.31)(react-devtools-core@4.28.5)(react@18.2.0)
+        version: 4.4.1(@types/react@18.2.37)(react-devtools-core@4.28.5)(react@18.2.0)
       ink-markdown:
         specifier: ^1.0.4
         version: 1.0.4(ink@4.4.1)(react@18.2.0)
@@ -29,8 +29,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1
       openai:
-        specifier: ^4.13.0
-        version: 4.13.0
+        specifier: ^4.17.0
+        version: 4.17.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -42,8 +42,8 @@ importers:
         specifier: ^5.0.0
         version: 5.0.0
       '@types/react':
-        specifier: ^18.2.31
-        version: 18.2.31
+        specifier: ^18.2.37
+        version: 18.2.37
       ava:
         specifier: ^5.3.1
         version: 5.3.1
@@ -61,7 +61,7 @@ importers:
         version: 4.6.0(eslint@8.52.0)
       ink-testing-library:
         specifier: ^3.0.0
-        version: 3.0.0(@types/react@18.2.31)
+        version: 3.0.0(@types/react@18.2.37)
       prettier:
         specifier: ^3.0.3
         version: 3.0.3
@@ -344,8 +344,8 @@ packages:
   /@types/prop-types@15.7.9:
     resolution: {integrity: sha512-n1yyPsugYNSmHgxDFjicaI2+gCNjsBck8UX9kuofAKlc0h1bL+20oSF72KeNaW2DUlesbEVCFgyV2dPGTiY42g==}
 
-  /@types/react@18.2.31:
-    resolution: {integrity: sha512-c2UnPv548q+5DFh03y8lEDeMfDwBn9G3dRwfkrxQMo/dOtRHUUO57k6pHvBIfH/VF4Nh+98mZ5aaSe+2echD5g==}
+  /@types/react@18.2.37:
+    resolution: {integrity: sha512-RGAYMi2bhRgEXT3f4B92WTohopH6bIXw05FuGlmJEnv/omEn190+QYEIYxIAuIBdKgboYYdVved2p1AxZVQnaw==}
     dependencies:
       '@types/prop-types': 15.7.9
       '@types/scheduler': 0.16.5
@@ -905,8 +905,8 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios@1.6.0:
-    resolution: {integrity: sha512-EZ1DYihju9pwVB+jg67ogm+Tmqc6JmhamRN6I4Zt8DfZu5lbcQGw3ozH9lFejSJgs/ibaef3A9PMXPLeefFGJg==}
+  /axios@1.6.1:
+    resolution: {integrity: sha512-vfBmhDpKafglh0EldBEbVuoe7DyAavGSLWhuSm5ZSEKQnHhBf0xAAwybbNH1IkrJNGnS/VG4I5yxig1pCEXE4g==}
     dependencies:
       follow-redirects: 1.15.3
       form-data: 4.0.0
@@ -2454,13 +2454,13 @@ packages:
       react: '>=16.8.0'
     dependencies:
       '@types/marked-terminal': 3.1.7
-      ink: 4.4.1(@types/react@18.2.31)(react-devtools-core@4.28.5)(react@18.2.0)
+      ink: 4.4.1(@types/react@18.2.37)(react-devtools-core@4.28.5)(react@18.2.0)
       marked: 9.1.2
       marked-terminal: 6.0.0(marked@9.1.2)
       react: 18.2.0
     dev: false
 
-  /ink-testing-library@3.0.0(@types/react@18.2.31):
+  /ink-testing-library@3.0.0(@types/react@18.2.37):
     resolution: {integrity: sha512-ItyyoOmcm6yftb7c5mZI2HU22BWzue8PBbO3DStmY8B9xaqfKr7QJONiWOXcwVsOk/6HuVQ0v7N5xhPaR3jycA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -2469,7 +2469,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.31
+      '@types/react': 18.2.37
     dev: true
 
   /ink-text-input@5.0.1(ink@4.4.1)(react@18.2.0):
@@ -2480,12 +2480,12 @@ packages:
       react: ^18.0.0
     dependencies:
       chalk: 5.3.0
-      ink: 4.4.1(@types/react@18.2.31)(react-devtools-core@4.28.5)(react@18.2.0)
+      ink: 4.4.1(@types/react@18.2.37)(react-devtools-core@4.28.5)(react@18.2.0)
       react: 18.2.0
       type-fest: 3.13.1
     dev: false
 
-  /ink@4.4.1(@types/react@18.2.31)(react-devtools-core@4.28.5)(react@18.2.0):
+  /ink@4.4.1(@types/react@18.2.37)(react-devtools-core@4.28.5)(react@18.2.0):
     resolution: {integrity: sha512-rXckvqPBB0Krifk5rn/5LvQGmyXwCUpBfmTwbkQNBY9JY8RSl3b8OftBNEYxg4+SWUhEKcPifgope28uL9inlA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -2499,7 +2499,7 @@ packages:
         optional: true
     dependencies:
       '@alcalzone/ansi-tokenize': 0.1.3
-      '@types/react': 18.2.31
+      '@types/react': 18.2.37
       ansi-escapes: 6.2.0
       auto-bind: 5.0.1
       chalk: 5.3.0
@@ -3384,8 +3384,8 @@ packages:
       is-wsl: 2.2.0
     dev: true
 
-  /openai@4.13.0:
-    resolution: {integrity: sha512-EPqHcB0got9cXDZmQae1KytgA4YWtTnUc7tV8hlahZtcO70DMa4kiaXoxnutj9lwmeKQO7ntG+6pmXtrCMejuQ==}
+  /openai@4.17.0:
+    resolution: {integrity: sha512-fJUdfOzKE49L2oitQ+L8oCYcTDI2oLOYmQvnPjklFrmH7M+8w65/8Ag9120ky1A3Xr3lCivALs2oBmNaZIvTgg==}
     hasBin: true
     dependencies:
       '@types/node': 18.18.6

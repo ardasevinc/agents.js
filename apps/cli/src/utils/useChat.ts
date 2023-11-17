@@ -4,6 +4,7 @@ import {
   ChatCompletionMessageParam,
   ChatCompletionCreateParamsBase,
 } from 'openai/resources/chat/completions.mjs';
+import { tools } from '../config/tools.js';
 
 interface UserMessage {
   content: string;
@@ -28,7 +29,6 @@ export const useChat = (
       { content: message },
     ]);
   };
-
   useEffect(() => {
     let aiResponseBuffer = '';
     let ignore = false;
@@ -39,7 +39,8 @@ export const useChat = (
         model: model,
         stream: true,
         messages: messages,
-        max_tokens: 1000,
+        functions: tools,
+        max_tokens: 4000,
         temperature: 0.8,
       });
 
@@ -58,7 +59,7 @@ export const useChat = (
             },
           ]);
 
-          // console.log(messages);
+          console.log(messages);
           ignore = true;
           break;
         }
