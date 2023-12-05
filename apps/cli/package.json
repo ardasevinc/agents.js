@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "exports": "./index.js",
+  "exports": "./src/cli.js",
   "bin": "./dist/cli.js",
   "engines": {
     "node": ">=18",
