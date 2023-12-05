@@ -14,13 +14,16 @@
     "dev": "tsc --watch",
     "test": "prettier --check . && xo && ava"
   },
-  "keywords": [],
+  "keywords": [
+    "ai"
+  ],
   "author": "Arda Sevinc <arda@ardasevinc.com>",
   "license": "ISC",
   "files": [
     "dist"
   ],
   "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
     "meow": "^12.1.1",
     "openai": "^4.13.0"
   },
@@ -37,14 +40,14 @@
   },
   "ava": {
     "extensions": {
-      "ts": "module",
+      "ts": "module"
     },
     "nodeArguments": [
       "--loader=ts-node/esm"
     ]
   },
   "xo": {
-    "prettier": true,
+    "prettier": true
   },
   "prettier": "@ardasevinc/prettier-config"
 }
