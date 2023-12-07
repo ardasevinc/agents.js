@@ -47,7 +47,10 @@
     ]
   },
   "xo": {
-    "prettier": true
+    "prettier": true,
+    "rules": {
+      "n/prefer-global/process": 0
+    }
   },
   "prettier": "@ardasevinc/prettier-config"
 }
