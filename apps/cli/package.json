@@ -24,6 +24,7 @@
   ],
   "dependencies": {
     "@inquirer/prompts": "^3.3.0",
+    "duck-duck-scrape": "^2.2.5",
     "meow": "^12.1.1",
     "openai": "^4.20.1"
   },
